@@ -1,0 +1,49 @@
+{
+  "name": "homebridge-withings-aura",
+  "version": "1.0.0",
+  "description": "Description ",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredericbarthelet/homebridge-withings-aura.git"
+  },
+  "keywords": [
+    "homebridge",
+    "withings",
+    "aura",
+    "plugin"
+  ],
+  "author": "Frédéric Barthelet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredericbarthelet/homebridge-withings-aura/issues"
+  },
+  "homepage": "https://github.com/fredericbarthelet/homebridge-withings-aura#readme",
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "axios": "^0.18.0",
+    "query-string": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.86.0",
+    "rollup": "^0.67.1",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
+}
